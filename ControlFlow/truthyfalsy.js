@@ -29,3 +29,24 @@ if(Object.keys(emptyObj).length === 0)
 
 if(false == 0 && false == "" && 0=="")
     console.log("True")
+
+//Nullish Coalescing Operator (??) : null undefined
+
+let val
+val = 5 ?? 10;
+console.log(val);
+//either 5 or 10 or null
+
+val=null ?? 10
+console.log(val);
+
+val= undefined ?? 15
+console.log(val);
+
+val= null ?? 10 ?? 10//here onbly first value is assigned ie 10
+
+// ternary operator 
+// cond ? true : false
+
+const price=100;
+(price>=100) ? console.log("More") : console.log("Less");;
