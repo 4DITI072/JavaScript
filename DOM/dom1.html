@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM Learning</title>
+
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id="title" class ="heading">DOM heading <span style="display: none;">test text</span></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit</p>
+
+            <input type="password" name="" id="">
+        
+        <!--
+        document.querySelector('input')
+        <input type=​"password" name id>​
+        document.querySelector('input[type="password"]')
+        <input type=​"password" name id>​  
+        title.innerText
+        'DOM heading'
+        title.textContent
+        'DOM heading test text'
+        
+        document.getElementsByClassName("heading")
+        HTMLCollection [h1#title.heading, title: h1#title.heading]0: h1#title.headingtitle: h1#title.headinglength: 1[[Prototype]]: HTMLCollection
+        document.querySelector("h1")  only first h1
+        <h1 #id=​"title" .class=​"heading">​…​</h1>
+        ​-->
+
+
+        <!--id=document.getElementById("title").id  class=document.getElementById("title").className
+        document.getElementById("title").getAtribute("class")
+        document.getElementById("title").setAtribute("class","test heading") = OVERWRITES
+        document.getElementById("title").className
+        'heading'
+        document.getElementById("title").setAttribute("class", "test heading")
+        undefined
+        //STYLE
+        title.style.backgroundColor = "green"
+        'green'
+        title.style.padding = "15px"
+        '15px'
+        title.style.borderRadius="15px"
+        '15px'
+        
+        //ADDING CONTENT
+        title.textContent
+        'DOM'
+        title.innerHTML
+        'DOM'
+        title.innerText
+        'DOM'-->
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        <!--
+        const myul=document.querySelector('ul')
+        undefined
+        myul.querySelector('li')
+        <li>​…​</li>​
+        myul
+        <ul>​…​</ul>​
+        myul.querySelector('li').innerText="five"
+        'five'-->
+    </div>
+    
+</body>
+</html>
+
+<!-- DOM MODEL : window > document > html > 
+ head(title- text node & meta-attribute) 
+ & body(div-attribute> h1-attribute+text node & p-text node) 
+ class - id
+ -->
+ <!--
+ NODELIST AND HTMLCOLLECTION
+ document.querySelectorAll('li')
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeList
+const myarr=[1,2,3,4]
+undefined
+const templist=document.querySelectorAll('li')
+undefined
+templist
+NodeList(3) [li, li, li]
+templist.style.color='green'
+VM312:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:21
+(anonymous) @ VM312:1Understand this error
+templist[0.style.color='green'
+VM381:1 Uncaught SyntaxError: Invalid or unexpected token
+
+templist[0].style.color='green'
+'green'
+const myh1=document.querySelectorAll('h1')
+undefined
+myh1[0].style.color='green'
+'green'
+templist.forEach(function (l) {
+    l.style.backgroundColor='green'
+})
+undefined
+document.getElementsByClassName('list-iem')
+
+const classlist=document.getElementsByClassName('list-item')
+undefined
+classlist.forEach(function(li) {
+    console.log(li)
+})
+VM1086:1 Uncaught TypeError: classlist.forEach is not a function
+    at <anonymous>:1:11
+(anonymous) @ VM1086:1Understand this error
+Array.from(classlist)
+[]
+const myconveredarr=Array.from('classlist')
+undefined
+myconveredarr.forEach(function (li){
+    li.style.color="orange"
+})
+-->
+
+ 
