@@ -1,0 +1,7 @@
+API= medium thru which two different web pages communicate
+or frontend and backend communicate
+
+most common apis : api.github.com/users, userfinderme api
+
+json formatter to learn about the sructure of an api.
+
