@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai or JS</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    setInterval(function(){
+        console.log("Aditi", Date.now());
+    },1000)
+    //or
+    const saydate=function(){
+        console.log(("Aditi",Date.now()));
+    }
+
+    const intervalid=setInterval(saydate,1000);
+    clearInterval(intervalid);
+
+    
+
+</script>
+</html>

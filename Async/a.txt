@@ -1,0 +1,18 @@
+javascript : 
+synchronous and single thread
+by default
+
+Execution context:execute 1 line of code at a time
+consolelog1
+consolelog2
+
+call stack
+
+memory heap:each oprn wais for last one to complete before executing
+
+blocking code       vs      non-blocking code
+blocks flow of program      dont block Execution
+read file sync              read file async
+
+task queue: 
+promise queue: high priority queue
