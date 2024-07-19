@@ -22,5 +22,16 @@ encapsulaion :
 inheritance : prototypes
 polymorphism : console.log()
 
+# Prototypal property of JS :
+const newHero = ["hulk","spiderman"]
+undefined
+newHero
+prototype : array  or String or function
+prototype: object 
+prootype : null
+
+
+# objects.js
+
 
 
