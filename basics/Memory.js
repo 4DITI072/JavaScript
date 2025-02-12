@@ -1,6 +1,6 @@
 /*
 2 types of memories in js:
-Stack-primitive only copy is send
+Stack-primitive only copy is send of the variable
  and Heap-reference/nonprimitive reference to var is sent. 
 */
 
