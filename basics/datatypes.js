@@ -1,12 +1,12 @@
 //Primitives : 
 /*
-Strings
+Strings : single or double quotes
 numbers
-undefined
-null - standalone value
-boolean
-symbol
-object
+undefined - when let name; : so initial value will be undefined
+null - standalone value (undefined when no value is assigned : null is representation of empty : let state = null : let temp; : temp=undefined degrees)
+boolean - true or false
+symbol : to find uniqueness
+object : 
 */ 
 let name = "Aditi"
 let age = 22
@@ -14,11 +14,11 @@ let score = 9.9
 let state 
 let isloggedin = true
 
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof score);
+console.log(typeof name); //--> string 
+console.log(typeof age);  // number
+console.log(typeof score); 
 console.log(typeof state);
-console.log(typeof null);
+console.log(typeof null); //object but undefined is undefined
 console.log(typeof isloggedin);
 
 //Objects in JS -
@@ -26,7 +26,7 @@ console.log(typeof isloggedin);
 //Datatype Conversion in JS
 let scor = "93"
 let scoreinnum = Number(scor)
-console.log(typeof(scoreinnum));
+console.log(typeof(scoreinnum));  //--> NaN : not a number for undefined also. but for null : 0 ; true =1 , false = 0 
 console.log(typeof(scor));
 
 let val = "93abc"
