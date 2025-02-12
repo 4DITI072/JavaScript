@@ -11,3 +11,6 @@ accCity = "Banglore"
 
 console.table([accID,accCity,pass,email]);
 console.log(accID);
+
+// basically let and var are different due to scope issues : use only let and const and [not var - as it does not have a scope]
+//also js is flexible enough to allow variable creation without any datatype but dont do it. 
